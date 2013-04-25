@@ -19,6 +19,9 @@
 
       coffee-mode auto-complete))
 
-(dolist (pkg required-packages)
-  (if (not (package-installed-p pkg))
-      (package-install pkg)))
+(let ((pending (remove-if 'package-installed-p required-packages)))
+  (when pending
+    (package-refresh-contents)
+    (dolist (pkg pending)
+      (if (not (package-installed-p pkg))
+          (package-install pkg)))))
