@@ -6,16 +6,16 @@
   ('windows-nt 
    (load-file (concat user-emacs-directory "platform/win-32.el"))))
 
+;; Store customizations in a file that we version
 (setq custom-file "~/.emacs.d/customs.el")
 (load custom-file)
 
-;; Setup package.el with repositories that have modern packages
-(require 'package)
-(add-to-list 'package-archives 
-    '("marmalade" . "http://marmalade-repo.org/packages/"))
-(add-to-list 'package-archives
-    '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(package-initialize)
+(add-to-list 'load-path "~/.emacs.d/customizations")
+(require 'package-custom)
+(require 'sass-custom)
+(require 'js-custom)
+(require 'org-custom)
+(require 'lisp-custom)
 
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
@@ -42,11 +42,6 @@
 (setq ring-bell-function (lambda () nil))
 (setq visible-bell 't)
 
-(add-to-list 'load-path "~/.emacs.d/customizations")
-(require 'sass-custom)
-(require 'js-custom)
-(require 'org-custom)
-(require 'lisp-custom)
 
 (add-to-list 'auto-mode-alist '("\\.cshtml" . html-mode))
 
