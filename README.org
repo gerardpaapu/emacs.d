@@ -1,0 +1,14 @@
+* My Emacs Setup
+
+  This is my emacs config for work at Xero
+
+** ./platform
+   
+   Platform specific configuration
+
+** ./customizations
+
+   Customizations broken up into modules for the modes or aspects that
+   they customize e.g. customizations/js-custom.el is customizations
+   for editing javascript and json. Some of it very specific to
+   javascript at Xero.
