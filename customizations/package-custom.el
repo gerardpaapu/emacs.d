@@ -9,8 +9,6 @@
 
 (package-initialize)
 
-(package-built-in-p 'org)
-
 (defun require-packages (packages)
   (defun -package-installed-p (package &optional version)
     "true if the package is installed and is at-least this version"
@@ -40,8 +38,7 @@
       (dolist (pkg pending)
         (package-install pkg)))))
 
-;; TODO: split this into the customization modules, so that they're
-;; each requiring their own packages
+
 (require-packages '(
                     projectile
                     dired-details dired-details+
