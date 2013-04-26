@@ -9,7 +9,6 @@
  '(js2-allow-rhino-new-expr-initializer nil)
  '(js2-global-externs (quote ("define" "require" "Ext" "XERO")))
  '(js2-language-version 150)
- '(org-agenda-files (quote ("c:/code/Date Shortcuts/README.org" "c:/projects/Date Shortcuts.org" "c:/projects/History and Notes.org")))
  '(org-html-head-include-default-style nil)
  '(org-html-head-include-scripts nil)
  '(org-html-postamble nil))
