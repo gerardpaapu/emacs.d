@@ -15,15 +15,12 @@
       (dolist (pkg pending)
         (package-install pkg)))))
 
+;; TODO: split this into the customization modules, so that they're
+;; each requiring their own packages
 (require-packages '(
-      org htmlize 
-      sass-mode projectile paredit magit 
-      json-mode js2-refactor js2-mode js-comint ac-js2
-
-      git-gutter magit
-
+      projectile
       dired-details dired-details+
-      color-theme-blackboard color-theme 
-
-      coffee-mode auto-complete))
+      color-theme
+      color-theme-blackboard
+      auto-complete))
 

@@ -12,6 +12,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/customizations")
 (require 'package-custom)
+(require 'git-custom)
 (require 'sass-custom)
 (require 'js-custom)
 (require 'org-custom)
@@ -45,10 +46,6 @@
 
 (add-to-list 'auto-mode-alist '("\\.cshtml" . html-mode))
 
-(require 'magit)
-(global-set-key (kbd "C-c m") 'magit-status)
-(add-hook 'magit-log-edit-mode-hook 
-          (lambda () (auto-fill-mode +1)))
 
 (when (display-graphic-p)
   (require 'color-theme-blackboard)

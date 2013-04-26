@@ -1,6 +1,7 @@
 ;;; -*- lexical-binding: t -*-
-(provide 'js-custom)
+(require-packages '(json-mode js2-refactor js2-mode js-comint ac-js2 coffee-mode))
 
+(provide 'js-custom)
 (require 'js-comint)
 (setq inferior-js-program-command "node --interactive")
 

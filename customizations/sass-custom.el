@@ -1,4 +1,5 @@
 ;;; -*- lexical-binding: t -*-
+(require-packages '(sass-mode))
 (provide 'sass-custom)
 
 (autoload 'sass-mode "sass-mode" nil t)

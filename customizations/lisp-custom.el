@@ -1,5 +1,7 @@
 (provide 'lisp-custom)
 
+(require-packages '(paredit))
+
 (autoload 'paredit-mode "paredit"
   "Minor mode for pseudo-structurally editing Lisp code." t)
 
