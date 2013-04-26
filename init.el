@@ -17,6 +17,7 @@
 (require 'org-custom)
 (require 'js-custom)
 (require 'lisp-custom)
+(require 'fsharp-custom)
 
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
