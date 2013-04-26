@@ -2,6 +2,12 @@
 
   This is my emacs config for work at Xero
 
+** Packages
+
+   My config relies on package.el which is included in the Emacs
+   distro as of v24. It should be able to fetch and install all the
+   packages it uses, each customization file installs its own packages.
+
 ** ./platform
    
    Platform specific configuration
