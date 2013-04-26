@@ -14,8 +14,8 @@
 (require 'package-custom)
 (require 'git-custom)
 (require 'sass-custom)
-(require 'js-custom)
 (require 'org-custom)
+(require 'js-custom)
 (require 'lisp-custom)
 
 (setq backup-directory-alist

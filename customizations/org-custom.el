@@ -1,4 +1,4 @@
-(require-packages '(org htmlize))
+(require-packages '((org 20130419) htmlize))
 (require 'org)
 (provide 'org-custom)
 (setq org-agenda-files (list (concat shared-folder "projects")))
