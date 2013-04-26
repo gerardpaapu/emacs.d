@@ -1,5 +1,5 @@
 ;;; -*- lexical-binding: t -*-
-(require-packages '(json-mode js2-refactor js2-mode js-comint ac-js2 coffee-mode))
+(require-packages '(json-mode js2-mode org js2-refactor js-comint ac-js2 coffee-mode))
 
 (provide 'js-custom)
 (require 'js-comint)
